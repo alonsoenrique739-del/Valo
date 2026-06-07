@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="Style.css">
+    <title>UCSC inscripcion Torneo</title>
+</head>
+<body>
+    <header id="header">
+        <img src="img/UCSC,_Universidad_Católica_de_la_Santísima_Concepción.png" alt="logo" height="80">
+        <img src="img/Valorant_Logo-700x700.png" alt="logo2" height="80">
+    </header>
+    <br><br>
+    <main>
+        <br><br>
+        <form>
+            <h1>Registro - Tarreo valorant</h1>
+            <br><br>
+            <label> Nombre Completo: </label>
+            <input type="text" name="nombre" minlength="5" maxlength="50" required>
+            <br><br>
+            <label> Edad</label>
+            <input type="number" min="17" name="Edad" required>
+            <br><br>
+            <label> Correo electrónico: </label>
+            <input type="email" name="correo" required>
+            <br><br>
+            <label>Riot ID(incluye#)</label>
+            <input type="text" name="ID" pattern=".*#.*" required>
+            <br><br>
+            <label>Rango actual</label>
+            <select name="Rango" required>
+                <option name="Iron">Iron</option>
+                <option name="Bronze">Bronze</option>
+                <option name="Silver">Silver</option>
+                <option name="Gold">Gold</option>
+                <option name="Platinum">Platinum</option>
+                <option name="Diamond">Diamond</option>
+                <option name="Ascendant">Ascendant</option>
+                <option name="Immortal">Immortal</option>
+                <option name="Radiant">Radiant</option>
+            </select>
+            <br><br>
+            <button type="submit">Enviar</button> 
+        </form>
+    </main>
+</body>
+</html>
